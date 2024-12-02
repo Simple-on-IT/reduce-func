@@ -1,5 +1,5 @@
 import { RouteObject } from "react-router-dom";
-import { MainPage } from "../../pages/MainPage/ui/MainPage";
+import App from "@/pages/App/ui/App";
 
 export enum AppRoutes {
     MAIN = 'main',
@@ -14,7 +14,7 @@ export const RoutePath: Record<AppRoutes, string> = {
 export const routeConfig: Record<AppRoutes, RouteObject & { title: string }> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
-        element: <MainPage />,
+        element: <App />,
         title: 'Основная страница'
     },
 

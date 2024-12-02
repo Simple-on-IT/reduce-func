@@ -1,0 +1,116 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: clamp(300px, 90%, 800px);
+  box-sizing: border-box;
+}
+
+/* Заголовки */
+.header {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: #00509e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #333;
+  margin: 15px 0;
+}
+
+/* Список задач */
+.task-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease-in-out;
+  gap: 5px;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  background-color: #e0ffe0;
+  color: #2e7d32;
+}
+
+.task-item.not-completed {
+  background-color: #ffe0e0;
+  color: #c62828;
+}
+
+/* Контент задачи */
+.task-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.task-label {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Категории */
+.category {
+  margin-bottom: 20px;
+}
+
+.category-header {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: #00509e;
+  margin-bottom: 10px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  margin: 5px 0;
+}
+
+/* Адаптация через контейнерные запросы */
+@container (max-width: 375px) {
+  .task-item {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .task-label {
+    font-size: 0.9rem;
+  }
+}
