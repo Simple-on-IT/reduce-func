@@ -15,7 +15,7 @@
 
 ### 3 этап. Формирование объекта.
 Вам нужно сгруппировать все задачи по категориям. В результате должен получиться вот такой объект:
-`
+```
   {
     food: [
       { id: 1, title: 'Заказать еду', type: 'food', cost: 5000, completed: true },
@@ -25,9 +25,9 @@
         { id: 2, title: 'Украсить квартиру', type: 'decoration', cost: 3000, completed: false },
     ], ...
   }
-`
+```
 Для этого в файле `App.tsx` напишите логику формирования объекта tasksByType с помощью reduce. Затем раскомментируйте вёрстку с использованием этой переменной.
 
 ## Дополнительные материалы:
-Документация - hhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-Видео - 
+Документация - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce  
+Видео - https://youtube.com/shorts/5gxHdwd44Gc?feature=share
