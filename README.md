@@ -28,6 +28,10 @@
 ```
 Для этого в файле `App.tsx` напишите логику формирования объекта tasksByType с помощью reduce. Затем раскомментируйте вёрстку с использованием этой переменной.
 
+## Запуск проекта:
+* `npm i` - установка библиотек
+* `npm run dev` - сборка для разработки
+
 ## Дополнительные материалы:
 Документация - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce  
 Видео - https://youtube.com/shorts/5gxHdwd44Gc?feature=share
